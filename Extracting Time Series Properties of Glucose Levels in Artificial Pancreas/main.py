@@ -1,8 +1,8 @@
 import pandas as pd
 import numpy as np
 
-cgm_data=pd.read_csv('CGMData.csv',low_memory=False,usecols=['Date','Time','Sensor Glucose (mg/dL)'])
-insulin_data=pd.read_csv('InsulinData.csv',low_memory=False)
+cgm_data=pd.read_csv('C:\DataMining\Extracting Time Series Properties of Glucose Levels in Artificial Pancreas\CGMData.csv',low_memory=False,usecols=['Date','Time','Sensor Glucose (mg/dL)'])
+insulin_data=pd.read_csv('C:\DataMining\Extracting Time Series Properties of Glucose Levels in Artificial Pancreas\InsulinData.csv',low_memory=False)
 
 cgm_data['date_time_stamp']=pd.to_datetime(cgm_data['Date'] + ' ' + cgm_data['Time'])
 
@@ -183,4 +183,4 @@ results_df = pd.DataFrame({'percent_time_in_hyperglycemia_overnight':[ percent_t
 },
 index=['manual_mode','auto_mode'])
 
-results_df.to_csv('Results.csv',header=False,index=False)
+results_df.to_csv('C:\DataMining\Extracting Time Series Properties of Glucose Levels in Artificial Pancreas\Results.csv',header=False,index=False)
