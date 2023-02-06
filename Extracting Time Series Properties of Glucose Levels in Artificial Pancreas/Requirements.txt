@@ -1,0 +1,17 @@
+README
+Steps to Execute Code
+Install python 3.6 to 3.8
+Install pandas and numpy 
+Execute the main.py file, the results will be available at the Results.csv file.
+
+NOTE 
+Install pandas using the following command
+pip install pandas
+Install Numpy using the following command
+Pip install numpy
+
+Link to resource(s)
+https://www.python.org/downloads
+
+
+
